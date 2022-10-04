@@ -1,5 +1,4 @@
 from lixeira import Lixeira
-from deposito import Deposito
 from random import *
 import numpy as np
 
@@ -80,6 +79,12 @@ class Espaco:
         print("LIXEIRA:")
         print("          QTD TIPO 1: {}".format(self.lix1.qtdtipo1))
         print("          QTD TIPO 2: {}".format(self.lix1.qtdtipo2))
+        print("---------------------")
+           
+        print("---------------------")
+        print("PONTOS:")
+        print("          PONTOS TIPO 1: {}".format(self.lix1.qtdtipo1 * 10) )
+        print("          PONTOS TIPO 2: {}".format(self.lix1.qtdtipo2 * 20) )
         print("---------------------")
 
     def atualizar(self, loc):

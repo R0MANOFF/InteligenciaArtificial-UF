@@ -208,9 +208,9 @@ def reativoBaseadoEmUtilidade():
                     else:
                         Ag1.removerMemoria(tipo_prox_lixo, prox_lixo)
             else:
-                pegou = Ag1.buscarLixo(2, espaco)
+                pegou = Ag1.buscarLixo(1, espaco)
                 if not pegou:
-                    pegou = Ag1.buscarLixo(1, espaco)
+                    pegou = Ag1.buscarLixo(2, espaco)
                     if pegou:
                         Ag1.ultimoLixo()
                 else:

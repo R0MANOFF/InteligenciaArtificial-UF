@@ -225,10 +225,11 @@ class AgenteObjetivo(AgenteModelo):
         elif (self.loc[0],self.loc[1]+1) not in self.historico[0] and self.loc[1]<19:
                 self.andar(4)
         else:
-            movimento = randint(1,4)
+            self.MovimentaLinha()
+            '''movimento = randint(1,4)
             while movimento == 1 and self.last_move ==2 or movimento==2 and self.last_move ==1 or movimento == 3 and self.last_move ==4 or movimento==4 and self.last_move ==3:
                 movimento = randint(1,4)
-            self.andar(movimento)
+            self.andar(movimento)'''
 
 class AgenteUtilidade(AgenteModelo):
 
